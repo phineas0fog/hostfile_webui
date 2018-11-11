@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% block content %}
+
+
+<input name="" type="text" value="" class="column col-8 col-mx-auto" id="searchBar" placeholder="Search the hostnames" onkeyup="onKeySearch()" />
+
+<table id="hosts_list" class="column col-8 col-mx-auto table table-hover table-striped">
+  
+  <tr>
+    <th>State</th>
+    <th>IP address</th>
+    <th>Hostname</th>
+  </tr>
+
+  <td>
+    <button class="btn btn-primary column col-8" onclick="sendNewRule()">add</button>
+  </td>
+  <td>
+    <input name="" type="text" value="" id="newRuleAddress"/>
+  </td>
+  <td>
+    <input name="" type="text" value="" id="newRuleHostname"/>
+  </td>
+  
+  {% for host in hosts['hosts'] %}
+  <tr>
+    {% if host['active'] == True %}
+    <td>
+      <button class="btn btn-success column col-8">active</button>
+    </td>
+    {% else %}
+    <td>
+      <button class="btn btn-error column col-8">inactive</button>
+    </td>
+    {% endif %}
+    <td>{{ host['address']}}</td>
+    <td class="host_name">{{ host['hostname']}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hostfile Webui</title>
+    <link rel="stylesheet" href="/public/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- {# notie css #} -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+	<!-- spectre css -->
+	<link rel="stylesheet" type="text/css" href="/public/spectre.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/spectre-exp.min.css">
+	<link rel="stylesheet" type="text/css" href="/public/spectre-icons.min.css">
+  </head>
+
+  <header>
+    <div class="header">
+      <h1>Hostfile Webui</h1>
+    </div>
+  </header>
+  
+  <body>
+    <div id="main" class="main container">
+      <div class="columns">
+	<!-- here go the content -->
+        {% block content %}{% endblock %}
+	
+      </div>
+    </div>
+
+</div> 
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="/public/app.js"></script>
+</html> 
