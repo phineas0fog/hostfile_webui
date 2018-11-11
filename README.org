@@ -1,6 +1,6 @@
 A webui for the /UNIX/ hosts file.
 
-[[./scrot.ong]]
+[[./scrot.png]]
 
 * Installation
 - =pipenv install=
