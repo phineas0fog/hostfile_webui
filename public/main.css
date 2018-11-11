@@ -1,0 +1,10 @@
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-image: linear-gradient(45deg, #312A6C, #852D91);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    margin-bottom: 5vh;
+}
