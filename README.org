@@ -8,6 +8,8 @@ A webui for the /UNIX/ hosts file.
 * Running
 - =flask app.py=
 
+Then go to [[http://localhost:5000/ui][http://localhost:5000/ui]] and enjoy :)
+
 * TODO:
 - TODO write to true =/etc/hosts= file
 - TODO impletement “activation / deactivation” buttons
