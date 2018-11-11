@@ -1,13 +1,15 @@
 A webui for the /UNIX/ hosts file.
 
+[[./scrot.ong]]
+
 * Installation
 - =pipenv install=
 
 * Running
 - =flask app.py=
 
-* TODO [0/2]
-** TODO write to true =/etc/hosts= file
-** TODO impletement “activation / deactivation” buttons
-** TODO move front to /vuejs/
-** TODO re-implement the backend in /Crsytal/ to increase performances
+* TODO:
+- TODO write to true =/etc/hosts= file
+- TODO impletement “activation / deactivation” buttons
+- TODO move front to /vuejs/
+- TODO re-implement the backend in /Crsytal/ to increase performances
